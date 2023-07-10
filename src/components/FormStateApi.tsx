@@ -11,6 +11,7 @@ export const FormStateApi = ({
     formState: {
       isDirty: ReactNode | string
       dirtyFields: ReactNode | string
+      validatingFields: ReactNode | string
       defaultValues: ReactNode | string
       touched: ReactNode | string
       isSubmitted: ReactNode | string
@@ -68,6 +69,20 @@ export const FormStateApi = ({
         <code className={typographyStyles.typeText}>object</code>
       </td>
       <td>{(api || API).formState.touched}</td>
+    </tr>
+    <tr>
+      {columnIndent && (
+        <td>
+          <code>formState</code>
+        </td>
+      )}
+      <td>
+        <code>validatingFields</code>
+      </td>
+      <td>
+        <code className={typographyStyles.typeText}>object</code>
+      </td>
+      <td>{(api || API).formState.validatingFields}</td>
     </tr>
     <tr>
       {columnIndent && (

@@ -135,6 +135,21 @@ getFieldState('firstName') // return updated field error state
                   </tr>
                   <tr>
                     <td>
+                      <p>isValidating</p>
+                    </td>
+                    <td>
+                      <code className={typographyStyles.typeText}>boolean</code>
+                    </td>
+                    <td>
+                      <p>field is currently validating.</p>
+                      <p>
+                        <b className={typographyStyles.note}>Condition: </b>
+                        subscribe to <code>validatingFields</code>.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                       <p>invalid</p>
                     </td>
                     <td>
